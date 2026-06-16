@@ -1,0 +1,15 @@
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/bin/Debug/net10.0/ZgadujZgadula2
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/bin/Debug/net10.0/ZgadujZgadula2.deps.json
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/bin/Debug/net10.0/ZgadujZgadula2.runtimeconfig.json
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/bin/Debug/net10.0/ZgadujZgadula2.dll
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/bin/Debug/net10.0/ZgadujZgadula2.pdb
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.AssemblyInfoInputs.cache
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.AssemblyInfo.cs
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.csproj.CoreCompileInputs.cache
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.sourcelink.json
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.dll
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/refint/ZgadujZgadula2.dll
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.pdb
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ZgadujZgadula2.genruntimeconfig.cache
+/Users/tmp/Documents/100_VSC/ZgadujZgadula2/obj/Debug/net10.0/ref/ZgadujZgadula2.dll
