@@ -1,4 +1,5 @@
-﻿using ZgadujZgadula2.TitleScreen; // Działa, bo MainMenu jest teraz w tym namespace w innym pliku
+﻿using ZgadujZgadula2.TitleScreen; 
+using ZgadujZgadula2.MainGameScreen;
 
 string selection = "0";
 
@@ -9,7 +10,7 @@ while (selection != "4")
 
     if (selection == "1")
     {
-
+        NewGame.Start();
     }
     else if (selection == "2")
     {
