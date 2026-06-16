@@ -1,11 +1,28 @@
 ﻿using ZgadujZgadula2.TitleScreen; // Działa, bo MainMenu jest teraz w tym namespace w innym pliku
 
-namespace ZgadujZgadula2;
+string selection = "0";
 
-class Gra
+while (selection != "4")
 {
-    static void Main()
+    MainMenu.Show();
+
+
+    if (selection == "1")
     {
-        MainMenu.Show();
+
+    }
+    else if (selection == "2")
+    {
+
+    }
+    else if (selection == "3")
+    {
+
+    }
+    else
+    {
+        selection = Console.ReadLine()!;
     }
 }
+
+return 0;
