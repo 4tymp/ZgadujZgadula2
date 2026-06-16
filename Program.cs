@@ -20,10 +20,8 @@ while (selection != "4")
     {
 
     }
-    else
-    {
-        selection = Console.ReadLine()!;
-    }
+    
+    selection = Console.ReadLine()!;
 }
 
 return 0;

@@ -6,6 +6,8 @@ public class NewGame{
         public static void Start(){
             
             DifficultySelection.Show();
-            DifficultySelection.HandleInput();
+            string difficulty = DifficultySelection.HandleInput();
+
+            
         }    
 }

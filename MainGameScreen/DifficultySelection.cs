@@ -21,9 +21,14 @@ public class DifficultySelection{
             {
                 Console.WriteLine("Niepoprawny wybór. Wybierz poprawną opcję (1-3):");
             }
-            
+
             selection = Console.ReadLine()!;
         }
+
+        Console.Clear();
+
+        Console.WriteLine($"Wybrano poziom trudności: {selection}");
+
         return selection;
     }
 }
