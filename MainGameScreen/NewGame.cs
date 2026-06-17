@@ -4,9 +4,13 @@ namespace ZgadujZgadula2.MainGameScreen;
 
 public class NewGame{
         public static void Start(){
+            string? difficulty = null;
             
-            DifficultySelection.Show();
-            string difficulty = DifficultySelection.HandleInput();
+            while (difficulty == null)
+            {
+                DifficultySelection.Show();
+                difficulty = DifficultySelection.HandleInput();
+            }
             
             int target = DifficultySelection.RandomNumber(difficulty);
 

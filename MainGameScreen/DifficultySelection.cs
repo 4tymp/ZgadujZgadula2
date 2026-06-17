@@ -12,7 +12,7 @@ public class DifficultySelection{
         Console.WriteLine("1. Łatwy | 2. Średni | 3. Trudny");
     }    
 
-    public static string HandleInput(){
+    public static string? HandleInput(){
         string selection = "";
 
         while (selection != "1" && selection != "2" && selection != "3")
@@ -25,9 +25,14 @@ public class DifficultySelection{
             selection = Console.ReadLine()!;
         }
 
-        Console.Clear();
 
-        Console.WriteLine($"Wybrano poziom trudności: {selection}");
+        Console.WriteLine($"\nJesteś pewny, ze chcesz wybrać poziom trudności: {selection} ?\ny/n");
+
+        string confirm = Console.ReadLine()!;
+        if (confirm == "n")
+        {
+            return null;
+        }
 
         return selection;
     }
