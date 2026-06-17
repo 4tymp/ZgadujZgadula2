@@ -31,4 +31,17 @@ public class DifficultySelection{
 
         return selection;
     }
+
+    public static int RandomNumber(string difficulty){
+        Random rand = new Random();
+        
+        if (difficulty == "1"){
+            return rand.Next(1, 51);
+        } else if (difficulty == "2"){
+            return rand.Next(1, 101);
+        } else {
+            return rand.Next(1, 251);
+        }
+
+    }
 }

@@ -7,7 +7,9 @@ public class NewGame{
             
             DifficultySelection.Show();
             string difficulty = DifficultySelection.HandleInput();
-
             
+            int target = DifficultySelection.RandomNumber(difficulty);
+
+            Console.WriteLine(target);
         }    
 }
