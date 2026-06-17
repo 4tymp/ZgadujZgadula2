@@ -11,7 +11,7 @@ public class GameSession {
 
 
     public void Start(){
-        startTime = DateTime.Now; // ustawiamy czas startu gry na aktualny czas
+        startTime = DateTime.Now;
     }
     public void IncrementAttempts(){
         attempts++;
