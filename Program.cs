@@ -3,7 +3,7 @@ using ZgadujZgadula2.MainGameScreen;
 
 string selection = "0";
 
-while (selection != "4")
+while (true)
 {
     MainMenu.Show();
 
@@ -19,6 +19,10 @@ while (selection != "4")
     else if (selection == "3")
     {
 
+    }
+    else if (selection == "4")
+    {
+        break;
     }
     
     selection = Console.ReadLine()!;
