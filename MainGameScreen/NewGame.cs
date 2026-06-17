@@ -1,4 +1,4 @@
-
+using ZgadujZgadula2.MainGameScreen;
 
 namespace ZgadujZgadula2.MainGameScreen;
 
@@ -14,6 +14,6 @@ public class NewGame{
             
             int target = DifficultySelection.RandomNumber(difficulty);
 
-            Console.WriteLine(target);
+            MainGame.Start(target,difficulty);
         }    
 }

@@ -26,7 +26,7 @@ public class DifficultySelection{
         }
 
 
-        Console.WriteLine($"\nJesteś pewny, ze chcesz wybrać poziom trudności: {selection} ?\ny/n");
+        Console.WriteLine($"\nJesteś pewny, ze chcesz wybrać poziom trudności: {selection} ?\nT/n");
 
         string confirm = Console.ReadLine()!;
         if (confirm == "n")
