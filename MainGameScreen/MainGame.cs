@@ -6,18 +6,20 @@ public class MainGame{
 
         newGame.Start();
 
-        bool? goodguess = null;
+        int? guess = null;
 
-        while(goodguess != true){
+        while(guess != target){
             MainGameScreen.Show(newGame, difficulty);
 
-            if (goodguess != null){
-                // metoda wyswietlania komunikatu (randommessages)
+            if (guess != null){
+                ShowRandomMessages.Show(guess, target);
             }
 
-            goodguess = CheckInput.Check(target);
+            guess = CheckInput.Check();
 
             newGame.IncrementAttempts();
         }
+
+        // dodawanie do hall of fame
     }
 }

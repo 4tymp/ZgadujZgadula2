@@ -14,7 +14,7 @@ public class RandomMessages{
         public Random rand = new Random();
 
 
-        public string PobierzWiadomosc()
+        public string LoadMessage()
         {
             int index = rand.Next(messages.Count);
             return messages[index];

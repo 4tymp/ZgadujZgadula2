@@ -1,22 +1,18 @@
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class CheckInput{
-    public static bool Check(int target){
+    public static int Check(){
 
         try{
-            string? strguess = Console.ReadLine();
+            string? guess = Console.ReadLine();
             
-            int guess = Convert.ToInt32(strguess);
+            return Convert.ToInt32(guess);
 
-            if (guess == target){
-            return true;
-            }else{
-                return false;
-            }
+            
         }
         catch{
             Console.WriteLine($"\nnie podałeś liczby.");
-            return Check(target);
+            return Check();
         }
 
         
