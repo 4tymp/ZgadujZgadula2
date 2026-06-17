@@ -1,5 +1,3 @@
-using ZgadujZgadula2.MainGameScreen;
-
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class NewGame{

@@ -7,7 +7,7 @@ public class RandomMessages{
             "Niestety pudło! Celuj dalej.",
             "Nie tym razem, pomyśl chwilę!",
             "Blisko, ale to wciąż nie to.",
-            "Ups! Los chciał inaczej. Próbuj dalej!"
+            "Los chciał inaczej. Próbuj dalej!"
         };
 
 
