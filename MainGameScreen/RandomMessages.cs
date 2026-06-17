@@ -1,7 +1,7 @@
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class RandomMessages{
-        public List<string> messages = new List<string>
+        private List<string> messages = new List<string>
         {
             "Zła odpowiedź, spróbuj jeszcze raz!",
             "Niestety pudło! Celuj dalej.",
@@ -11,7 +11,7 @@ public class RandomMessages{
         };
 
 
-        public Random rand = new Random();
+        private Random rand = new Random();
 
 
         public string LoadMessage()
