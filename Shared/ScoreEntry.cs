@@ -1,4 +1,6 @@
-namespace ZgadujZgadula2.MainGameScreen;
+using ZgadujZgadula2.MainGameScreen;
+
+namespace ZgadujZgadula2.Shared;
 
 public class ScoreEntry{
     public string PlayerName {get;}
