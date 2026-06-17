@@ -1,7 +1,7 @@
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class MainGame{
-    public static void Start(int target, string difficulty){
+    public static void Start(int target, Difficulty difficulty){
         
         Console.Clear();
         Console.WriteLine("Zgadnij liczbę!");

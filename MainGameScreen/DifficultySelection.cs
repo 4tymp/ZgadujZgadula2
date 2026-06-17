@@ -12,7 +12,7 @@ public class DifficultySelection{
         Console.WriteLine("1. Łatwy | 2. Średni | 3. Trudny");
     }    
 
-    public static string? HandleInput(){
+    public static Difficulty? HandleInput(){
         string selection = "";
 
         while (selection != "1" && selection != "2" && selection != "3")
@@ -34,19 +34,8 @@ public class DifficultySelection{
             return null;
         }
 
-        return selection;
-    }
-
-    public static int RandomNumber(string difficulty){
-        Random rand = new Random();
-        
-        if (difficulty == "1"){
-            return rand.Next(1, 51);
-        } else if (difficulty == "2"){
-            return rand.Next(1, 101);
-        } else {
-            return rand.Next(1, 251);
-        }
-
+        if (selection == "1") return new Easy();
+        else if (selection == "2") return new Medium();
+        else return new Hard();
     }
 }

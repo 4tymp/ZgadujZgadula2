@@ -4,7 +4,7 @@ namespace ZgadujZgadula2.MainGameScreen;
 
 public class NewGame{
         public static void Start(){
-            string? difficulty = null;
+            Difficulty? difficulty = null;
             
             while (difficulty == null)
             {
@@ -12,8 +12,8 @@ public class NewGame{
                 difficulty = DifficultySelection.HandleInput();
             }
             
-            int target = DifficultySelection.RandomNumber(difficulty);
+            int target = difficulty.GetTarget();
 
-            MainGame.Start(target,difficulty);
+            MainGame.Start(target, difficulty);
         }    
 }
