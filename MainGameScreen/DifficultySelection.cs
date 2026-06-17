@@ -26,16 +26,19 @@ public class DifficultySelection{
         }
 
 
-        Console.WriteLine($"\nJesteś pewny, ze chcesz wybrać poziom trudności: {selection} ?\nT/n");
+        Difficulty chosen;
+
+        if (selection == "1") chosen = new Easy();
+        else if (selection == "2") chosen = new Medium();
+        else chosen = new Hard();
+
+        Console.WriteLine($"\nJesteś pewny, ze chcesz wybrać {chosen.Name} poziom trudności?\nT/n");
 
         string confirm = Console.ReadLine()!;
-        if (confirm == "n")
-        {
-            return null;
-        }
+        if (confirm == "n") return null;
 
-        if (selection == "1") return new Easy();
-        else if (selection == "2") return new Medium();
-        else return new Hard();
+        return chosen;
+        
     }
+
 }
