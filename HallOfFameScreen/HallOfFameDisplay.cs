@@ -11,7 +11,7 @@ public class HallOfFameDisplay {
 
         Console.WriteLine($"Hall of Fame - {difficulty.Name}");
         
-        Console.WriteLine("-----------------------------------");
+        Console.WriteLine("---------------------------------------------");
 
         List<ScoreEntry> top5 = hallOfFame.GetTop5(difficulty);
 

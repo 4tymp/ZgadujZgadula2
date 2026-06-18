@@ -14,10 +14,14 @@ while (true)
     if (selection == "1")
     {
         NewGame.Start(hallOfFame);
+        selection = "0";
+        continue;
     }
     else if (selection == "2")
     {
         HallOfFameScreen.Show(hallOfFame);
+        selection = "0"; //zeby nie klikac dwa razy 4 po wyjsciu z hall of fame
+        continue;
     }
     else if (selection == "3")
     {
