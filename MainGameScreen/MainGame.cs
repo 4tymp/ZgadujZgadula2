@@ -32,8 +32,8 @@ public class MainGame{
         }
 
         if (badGameOver == false){
-            GameOver.Show(newGame);
-            GameOver.HandleInput(newGame, difficulty, hallOfFame);
+            GameOver.Show(newGame, settings);
+            GameOver.HandleInput(newGame, difficulty, hallOfFame, settings);
         }
     }
 }
