@@ -1,7 +1,9 @@
+using ZgadujZgadula2.HallOfFameScreen;
+
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class NewGame{
-        public static void Start(){
+        public static void Start(HallOfFame hallOfFame){
             Difficulty? difficulty = null;
             
             while (difficulty == null)
@@ -12,6 +14,6 @@ public class NewGame{
             
             int target = difficulty.GetTarget();
 
-            MainGame.Start(target, difficulty);
+            MainGame.Start(target, difficulty, hallOfFame);
         }    
 }

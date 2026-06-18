@@ -1,5 +1,8 @@
 ﻿using ZgadujZgadula2.TitleScreen; 
 using ZgadujZgadula2.MainGameScreen;
+using ZgadujZgadula2.HallOfFameScreen;
+
+HallOfFame hallOfFame = new HallOfFame();
 
 string selection = "0";
 
@@ -10,11 +13,11 @@ while (true)
 
     if (selection == "1")
     {
-        NewGame.Start();
+        NewGame.Start(hallOfFame);
     }
     else if (selection == "2")
     {
-
+        HallOfFameScreen.Show(hallOfFame);
     }
     else if (selection == "3")
     {
