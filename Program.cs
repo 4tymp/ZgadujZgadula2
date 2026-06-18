@@ -10,7 +10,7 @@ string selection = "0";
 
 while (true)
 {
-    MainMenu.Show();
+    MainMenu.Show(settings);
 
 
     if (selection == "1")
