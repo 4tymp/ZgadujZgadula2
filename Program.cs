@@ -21,7 +21,7 @@ while (true)
     }
     else if (selection == "2")
     {
-        HallOfFameScreen.Show(hallOfFame);
+        HallOfFameScreen.Show(hallOfFame, settings);
         selection = "0"; //zeby nie klikac dwa razy 4 po wyjsciu z hall of fame
         continue;
     }

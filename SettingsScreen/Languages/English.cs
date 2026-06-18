@@ -41,6 +41,8 @@ public class English : Language {
     public override string HallOfFameTitle => "Hall of Fame - {0}";
     public override string NoScores => "No scores for this difficulty level.";
     public override string HallOfFameOptions => "1. Easy | 2. Medium | 3. Hard | 4. Exit";
+    public override string Attempts => "Attempts";
+    public override string Time => "Time";
 
     // Settings
     public override string SettingsTitle => "Settings";
