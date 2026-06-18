@@ -7,13 +7,13 @@ public class BetModeSelection{
         if (!settings.AskForBetMode) return null;
         
         Console.Clear();
-        Console.WriteLine("\nCzy chcesz grać w trybie zakładu?");
-        Console.WriteLine("T/n");
+        Console.WriteLine(settings.CurrentLanguage.BetModeQuestion);
+        Console.WriteLine(settings.CurrentLanguage.YesNo);
 
         string input = Console.ReadLine()!;
         if (input == "n") return null;
 
-        Console.WriteLine("Podaj maksymalną liczbę prób:");
+        Console.WriteLine(settings.CurrentLanguage.EnterMaxAttempts);
         return CheckInput.Check();
     }
 }

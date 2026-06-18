@@ -22,6 +22,6 @@ public class NewGame{
             }
             int target = difficulty.GetTarget();
 
-            MainGame.Start(target, difficulty, hallOfFame, newGame);
+            MainGame.Start(target, difficulty, hallOfFame, newGame, settings);
         }    
 }
