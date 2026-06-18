@@ -12,6 +12,11 @@ public class GameSession {
 
     public TimeSpan ElapsedTime => DateTime.Now - startTime; // oblicza czas trwania gry (aktualny czas - czas startu gry)
 
+    public bool IsNewGamePlus { get; private set; } = false;
+
+    public void SetNewGamePlus() {
+        IsNewGamePlus = true;
+    }   
 
     public void Start(){
         startTime = DateTime.Now;
