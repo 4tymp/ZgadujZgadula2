@@ -1,9 +1,10 @@
 using ZgadujZgadula2.HallOfFameScreen;
+using ZgadujZgadula2.SettingsScreen;
 
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class MainGame{
-    public static void Start(int target, Difficulty difficulty, HallOfFame hallOfFame, GameSession newGame){
+    public static void Start(int target, Difficulty difficulty, HallOfFame hallOfFame, GameSession newGame, Settings settings){
 
         newGame.Start();
 
@@ -12,7 +13,7 @@ public class MainGame{
 
         while(guess != target){
             if (newGame.MaxAttempts == null || newGame.MaxAttempts > newGame.Attempts){
-                MainGameScreen.Show(newGame, difficulty);
+                MainGameScreen.Show(newGame, difficulty, settings);
 
                 if (guess != null){
                     ShowRandomMessages.Show(guess, target);
