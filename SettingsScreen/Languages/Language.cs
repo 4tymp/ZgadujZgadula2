@@ -53,6 +53,7 @@ public abstract class Language {
     // MainMenu
     public abstract string MainMenuOptions { get; }
     public abstract string SelectOption { get; }
+    public abstract string MainMenuOptionsNoHallOfFame { get; }
 
     // GameModeSelection
     public abstract string GameModeQuestion { get; }

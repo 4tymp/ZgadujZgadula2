@@ -8,10 +8,8 @@ Settings settings = new Settings();
 
 string selection = "0";
 
-while (true)
-{
-    MainMenu.Show(settings);
-
+while (true){
+    MainMenu.Show(settings, hallOfFame);
 
     if (selection == "1")
     {
@@ -19,23 +17,23 @@ while (true)
         selection = "0";
         continue;
     }
-    else if (selection == "2")
+    else if (selection == "2" && hallOfFame.HasEntries())
     {
         HallOfFameScreen.Show(hallOfFame, settings);
-        selection = "0"; //zeby nie klikac dwa razy 4 po wyjsciu z hall of fame
+        selection = "0";
         continue;
     }
-    else if (selection == "3")
+    else if ((selection == "3" && hallOfFame.HasEntries()) || (selection == "2" && !hallOfFame.HasEntries()))
     {
         SettingsScreen.Show(settings, hallOfFame);
         selection = "0";
         continue;
     }
-    else if (selection == "4")
+    else if ((selection == "4" && hallOfFame.HasEntries()) || (selection == "3" && !hallOfFame.HasEntries()))
     {
         break;
     }
-    
+
     selection = Console.ReadLine()!;
 }
 

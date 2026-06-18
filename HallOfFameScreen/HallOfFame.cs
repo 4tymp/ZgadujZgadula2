@@ -27,13 +27,17 @@ public class HallOfFame{
     }
 
     public void Clear(Settings settings) {
-    Console.WriteLine(settings.CurrentLanguage.ClearHallOfFameConfirm);
-    string confirm = Console.ReadLine()!;
-    
-    if (confirm == "t" || confirm == "T") {
-        entries.Clear();
-        Console.WriteLine(settings.CurrentLanguage.ClearHallOfFameSuccess);
-        Console.ReadLine();
+        Console.WriteLine(settings.CurrentLanguage.ClearHallOfFameConfirm);
+        string confirm = Console.ReadLine()!;
+        
+        if (confirm == "t" || confirm == "T") {
+            entries.Clear();
+            Console.WriteLine(settings.CurrentLanguage.ClearHallOfFameSuccess);
+            Console.ReadLine();
+        }   
     }
-}
+
+    public bool HasEntries() {
+        return entries.Count > 0;
+    }
 }

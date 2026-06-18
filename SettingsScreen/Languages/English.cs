@@ -58,6 +58,7 @@ public class English : Language {
     // MainMenu
     public override string MainMenuOptions => "1. New game | 2. Hall of Fame | 3. Settings | 4. Exit";
     public override string SelectOption => "Select a valid option (1-4):";
+    public override string MainMenuOptionsNoHallOfFame => "1. New game | 2. Settings | 3. Exit";
 
     // GameModeSelection
     public override string GameModeQuestion => "Select game mode:";

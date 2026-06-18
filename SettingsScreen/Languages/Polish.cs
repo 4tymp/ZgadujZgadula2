@@ -59,6 +59,7 @@ public class Polish : Language {
     // MainMenu
     public override string MainMenuOptions => "1. Nowa gra | 2. Hall of Fame | 3. Ustawienia | 4. Wyjście";
     public override string SelectOption => "Wybierz poprawną opcję (1-4):";
+    public override string MainMenuOptionsNoHallOfFame => "1. Nowa gra | 2. Ustawienia | 3. Wyjście";
     
     // GameModeSelection
     public override string GameModeQuestion => "Wybierz tryb gry:";
