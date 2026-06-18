@@ -43,9 +43,13 @@ public abstract class Language {
     public abstract string BetModeSetting { get; }
     public abstract string BetModeOn { get; }
     public abstract string BetModeOff { get; }
+    public abstract string LanguageSetting { get; }
+    public abstract string ClearHallOfFame { get; }
     public abstract string Exit { get; }
 
     // MainMenu
     public abstract string MainMenuOptions { get; }
     public abstract string SelectOption { get; }
+
+
 }

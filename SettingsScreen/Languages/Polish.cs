@@ -49,9 +49,13 @@ public class Polish : Language {
     public override string BetModeSetting => "1. Tryb zakładu: {0}";
     public override string BetModeOn => "Włączony";
     public override string BetModeOff => "Wyłączony";
-    public override string Exit => "2. Wyjście";
+    public override string LanguageSetting => "2. Język: Polski";
+    public override string ClearHallOfFame => "3. Wyczyść Hall of Fame";
+    public override string Exit => "4. Wyjście";
 
     // MainMenu
     public override string MainMenuOptions => "1. Nowa gra | 2. Hall of Fame | 3. Ustawienia | 4. Wyjście";
     public override string SelectOption => "Wybierz poprawną opcję (1-4):";
+    
+
 }
