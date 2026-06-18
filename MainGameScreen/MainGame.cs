@@ -16,7 +16,7 @@ public class MainGame{
                 MainGameScreen.Show(newGame, difficulty, settings);
 
                 if (guess != null){
-                    ShowRandomMessages.Show(guess, target);
+                    ShowRandomMessages.Show(guess, target, settings);
                 }
 
                 guess = CheckInput.Check();

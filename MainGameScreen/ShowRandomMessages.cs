@@ -1,18 +1,20 @@
+using ZgadujZgadula2.SettingsScreen;
+
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class ShowRandomMessages{
-    public static void Show(int? guess, int target){
+    public static void Show(int? guess, int target, Settings settings){
         RandomMessages message = new RandomMessages(); 
 
 
         string higherlowermessage;
 
         if (guess > target){
-            higherlowermessage = " Strzelasz za wysoko.";
+            higherlowermessage = settings.CurrentLanguage.TooHigh;
         }else{
-            higherlowermessage = " Strzelasz za nisko.";
+            higherlowermessage = settings.CurrentLanguage.TooLow;
         }
-        Console.WriteLine(message.LoadMessage() + higherlowermessage);
+        Console.WriteLine(message.LoadMessage() + " " + higherlowermessage);
 
         
     }
