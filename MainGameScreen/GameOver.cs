@@ -17,7 +17,7 @@ public class GameOver{
     public static void HandleInput(GameSession session, Difficulty difficulty, HallOfFame hallOfFame, Settings settings){
         string playerName = Console.ReadLine()!;
 
-        ScoreEntry entry = new ScoreEntry(playerName, difficulty, session.Attempts, session.ElapsedTime);
+        ScoreEntry entry = new ScoreEntry(playerName, difficulty, session.Attempts, session.ElapsedTime, session.IsNewGamePlus);
         hallOfFame.Add(entry);
 
         Console.WriteLine(settings.CurrentLanguage.ScoreSaved);
