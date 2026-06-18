@@ -60,5 +60,9 @@ public class Polish : Language {
     public override string MainMenuOptions => "1. Nowa gra | 2. Hall of Fame | 3. Ustawienia | 4. Wyjście";
     public override string SelectOption => "Wybierz poprawną opcję (1-4):";
     
-
+    // GameModeSelection
+    public override string GameModeQuestion => "Wybierz tryb gry:";
+    public override string GameModeOptions => "1. Standardowa | 2. Nowa Gra+";
+    public override string NewGamePlus => "NOWA GRA+";
+    public override string RerollIn => "Liczba przelosuje się za {0} strzałów";
 }

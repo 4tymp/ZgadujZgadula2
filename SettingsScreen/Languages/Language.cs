@@ -54,5 +54,9 @@ public abstract class Language {
     public abstract string MainMenuOptions { get; }
     public abstract string SelectOption { get; }
 
-
+    // GameModeSelection
+    public abstract string GameModeQuestion { get; }
+    public abstract string GameModeOptions { get; }
+    public abstract string NewGamePlus { get; }
+    public abstract string RerollIn { get; }
 }

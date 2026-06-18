@@ -59,5 +59,9 @@ public class English : Language {
     public override string MainMenuOptions => "1. New game | 2. Hall of Fame | 3. Settings | 4. Exit";
     public override string SelectOption => "Select a valid option (1-4):";
 
-
+    // GameModeSelection
+    public override string GameModeQuestion => "Select game mode:";
+    public override string GameModeOptions => "1. Standard | 2. New Game+";
+    public override string NewGamePlus => "NEW GAME+";
+    public override string RerollIn => "Number will reroll in {0} shots";
 }
