@@ -37,6 +37,8 @@ public abstract class Language {
     public abstract string HallOfFameOptions { get; }
     public abstract string Attempts { get; }
     public abstract string Time { get; }
+    public abstract string ClearHallOfFameConfirm { get; }
+    public abstract string ClearHallOfFameSuccess { get; }
 
     // Settings
     public abstract string SettingsTitle { get; }

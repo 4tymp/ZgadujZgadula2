@@ -43,6 +43,8 @@ public class Polish : Language {
     public override string HallOfFameOptions => "1. Łatwy | 2. Średni | 3. Trudny | 4. Wyjście";
     public override string Attempts => "Próby";
     public override string Time => "Czas";
+    public override string ClearHallOfFameConfirm => "Czy na pewno chcesz wyczyścić Hall of Fame?\nT/n";
+    public override string ClearHallOfFameSuccess => "Hall of Fame wyczyszczone!";
 
     // Settings
     public override string SettingsTitle => "Ustawienia";

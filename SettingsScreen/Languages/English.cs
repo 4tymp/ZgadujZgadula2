@@ -43,7 +43,8 @@ public class English : Language {
     public override string HallOfFameOptions => "1. Easy | 2. Medium | 3. Hard | 4. Exit";
     public override string Attempts => "Attempts";
     public override string Time => "Time";
-
+    public override string ClearHallOfFameConfirm => "Are you sure you want to clear the Hall of Fame?\nY/n";
+    public override string ClearHallOfFameSuccess => "Hall of Fame cleared!";
     // Settings
     public override string SettingsTitle => "Settings";
     public override string BetModeSetting => "1. Bet mode: {0}";

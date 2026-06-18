@@ -19,7 +19,7 @@ public class SettingsScreen {
             }
             else if (input == "3")
             {
-                //hallOfFame.Clear(settings);
+                hallOfFame.Clear(settings);
             }
             else if (input == "4")
             {

@@ -1,5 +1,6 @@
 using ZgadujZgadula2.Shared;
 using ZgadujZgadula2.MainGameScreen;
+using ZgadujZgadula2.SettingsScreen;
 
 namespace ZgadujZgadula2.HallOfFameScreen;
 
@@ -22,5 +23,17 @@ public class HallOfFame{
             .Take(5)
             // zamień wynik na List<ScoreEntry>
             .ToList();
+
     }
+
+    public void Clear(Settings settings) {
+    Console.WriteLine(settings.CurrentLanguage.ClearHallOfFameConfirm);
+    string confirm = Console.ReadLine()!;
+    
+    if (confirm == "t" || confirm == "T") {
+        entries.Clear();
+        Console.WriteLine(settings.CurrentLanguage.ClearHallOfFameSuccess);
+        Console.ReadLine();
+    }
+}
 }
