@@ -5,7 +5,8 @@ namespace ZgadujZgadula2.MainGameScreen;
 public class BetModeSelection{
     public static int? Show(Settings settings) {
         if (!settings.AskForBetMode) return null;
-
+        
+        Console.Clear();
         Console.WriteLine("\nCzy chcesz grać w trybie zakładu?");
         Console.WriteLine("T/n");
 

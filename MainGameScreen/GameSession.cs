@@ -6,6 +6,7 @@ public class GameSession {
 
 
     public int Attempts => attempts; // strzalka = tylko do odczytu, nie edytujesz attempts
+    private int? MaxAttempts = null;
 
     public TimeSpan ElapsedTime => DateTime.Now - startTime; // oblicza czas trwania gry (aktualny czas - czas startu gry)
 
@@ -15,5 +16,9 @@ public class GameSession {
     }
     public void IncrementAttempts(){
         attempts++;
+    }
+
+    public void ChangeMaxAttempts(int? newMaxAttempts){
+        MaxAttempts = newMaxAttempts;
     }
 }
