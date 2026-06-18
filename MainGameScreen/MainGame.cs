@@ -24,7 +24,7 @@ public class MainGame{
                 newGame.IncrementAttempts();
             }
             else {
-                BadGameOver.Show(newGame);
+                BadGameOver.Show(newGame, settings);
                 badGameOver = true;
 
                 break;
