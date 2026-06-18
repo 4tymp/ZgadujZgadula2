@@ -7,6 +7,12 @@ public class NewGame{
         public static void Start(HallOfFame hallOfFame, Settings settings){
             GameSession newGame = new GameSession();
 
+            bool isNewGamePlus = GameModeSelection.Show(settings);
+
+            if (isNewGamePlus) {
+            newGame.SetNewGamePlus();
+        }
+
             Difficulty? difficulty = null;
             
             while (difficulty == null)
@@ -15,11 +21,14 @@ public class NewGame{
                 difficulty = DifficultySelection.HandleInput(settings);
             }
             
-            int? maxAttempts = BetModeSelection.Show(settings); //pytanie o tryb zakladu
 
-            if (maxAttempts != null){
-                newGame.ChangeMaxAttempts(maxAttempts);
+            if (isNewGamePlus == false) {
+                int? maxAttempts = BetModeSelection.Show(settings); // pytanie o trybzakladu
+                if (maxAttempts != null) {
+                    newGame.ChangeMaxAttempts(maxAttempts);
+                }
             }
+
             int target = difficulty.GetTarget();
 
             MainGame.Start(target, difficulty, hallOfFame, newGame, settings);
