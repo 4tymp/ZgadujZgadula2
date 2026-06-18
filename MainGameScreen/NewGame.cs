@@ -11,8 +11,8 @@ public class NewGame{
             
             while (difficulty == null)
             {
-                DifficultySelection.Show();
-                difficulty = DifficultySelection.HandleInput();
+                DifficultySelection.Show(settings);
+                difficulty = DifficultySelection.HandleInput(settings);
             }
             
             int? maxAttempts = BetModeSelection.Show(settings); //pytanie o tryb zakladu

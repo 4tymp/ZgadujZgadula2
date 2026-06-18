@@ -1,25 +1,26 @@
 using ZgadujZgadula2.Utils;
+using ZgadujZgadula2.SettingsScreen;
 
 namespace ZgadujZgadula2.MainGameScreen;
 
 public class DifficultySelection{
-    public static void Show(){
+    public static void Show(Settings settings){
         Console.Clear();
         ASCII.Title();
 
-        Console.WriteLine("Wybierz poziom trudności:");
+        Console.WriteLine(settings.CurrentLanguage.SelectDifficulty);
 
-        Console.WriteLine("1. Łatwy | 2. Średni | 3. Trudny");
+        Console.WriteLine(settings.CurrentLanguage.DifficultyOptions);
     }    
 
-    public static Difficulty? HandleInput(){
+    public static Difficulty? HandleInput(Settings settings){
         string selection = "";
 
         while (selection != "1" && selection != "2" && selection != "3")
         {
             if (selection != "")
             {
-                Console.WriteLine("Niepoprawny wybór. Wybierz poprawną opcję (1-3):");
+                Console.WriteLine(settings.CurrentLanguage.InvalidDifficulty);
             }
 
             selection = Console.ReadLine()!;
@@ -32,7 +33,7 @@ public class DifficultySelection{
         else if (selection == "2") chosen = new Medium();
         else chosen = new Hard();
 
-        Console.WriteLine($"\nJesteś pewny, ze chcesz wybrać {chosen.Name} poziom trudności?\nT/n");
+        Console.WriteLine(string.Format(settings.CurrentLanguage.ConfirmDifficulty, chosen.Name));
 
         string confirm = Console.ReadLine()!;
         if (confirm == "n") return null;
