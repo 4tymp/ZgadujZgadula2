@@ -2,11 +2,13 @@ namespace ZgadujZgadula2.MainGameScreen;
 
 public class GameSession {
     private int attempts;
+
+    private int? maxAttempts = null;
     private DateTime startTime;
 
 
     public int Attempts => attempts; // strzalka = tylko do odczytu, nie edytujesz attempts
-    private int? MaxAttempts = null;
+    public int? MaxAttempts => maxAttempts;
 
     public TimeSpan ElapsedTime => DateTime.Now - startTime; // oblicza czas trwania gry (aktualny czas - czas startu gry)
 
@@ -17,8 +19,7 @@ public class GameSession {
     public void IncrementAttempts(){
         attempts++;
     }
-
     public void ChangeMaxAttempts(int? newMaxAttempts){
-        MaxAttempts = newMaxAttempts;
+        maxAttempts = newMaxAttempts;
     }
 }
