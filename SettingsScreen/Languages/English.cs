@@ -52,6 +52,7 @@ public class English : Language {
     public override string LanguageSetting => "2. Language: English";
     public override string ClearHallOfFame => "3. Clear Hall of Fame";
     public override string Exit => "4. Exit";
+    public override string InvalidSettings => "Invalid choice. Select a valid option (1-4):";
 
     // MainMenu
     public override string MainMenuOptions => "1. New game | 2. Hall of Fame | 3. Settings | 4. Exit";

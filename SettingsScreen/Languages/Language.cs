@@ -46,6 +46,7 @@ public abstract class Language {
     public abstract string LanguageSetting { get; }
     public abstract string ClearHallOfFame { get; }
     public abstract string Exit { get; }
+    public abstract string InvalidSettings { get; }
 
     // MainMenu
     public abstract string MainMenuOptions { get; }

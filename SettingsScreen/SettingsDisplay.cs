@@ -17,7 +17,8 @@ public class SettingsDisplay{
             betMode = settings.CurrentLanguage.BetModeOff;
 
         Console.WriteLine(string.Format(settings.CurrentLanguage.BetModeSetting, betMode));
-
+        Console.WriteLine(settings.CurrentLanguage.LanguageSetting);
+        Console.WriteLine(settings.CurrentLanguage.ClearHallOfFame);
 
 
         Console.WriteLine("-----------------------------------");

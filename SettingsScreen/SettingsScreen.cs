@@ -5,7 +5,7 @@ public class SettingsScreen {
         while (true)
         {
             SettingsDisplay.Show(settings);
-            string input = SettingsInput.HandleInput();
+            string input = SettingsInput.HandleInput(settings);
 
             if (input == "1")
             {
