@@ -7,19 +7,20 @@ public class SettingsDisplay{
         Console.Clear();
         ASCII.Title();
 
-        Console.WriteLine("Ustawienia");
+        Console.WriteLine(settings.CurrentLanguage.SettingsTitle);
         Console.WriteLine("-----------------------------------");
         
         string betMode;
         if (settings.AskForBetMode)
-            betMode = "Włączony";
+            betMode = settings.CurrentLanguage.BetModeOn;
         else
-            betMode = "Wyłączony";
+            betMode = settings.CurrentLanguage.BetModeOff;
 
-        Console.WriteLine($"1. Tryb zakładu: {betMode}");
+        Console.WriteLine(string.Format(settings.CurrentLanguage.BetModeSetting, betMode));
+
 
 
         Console.WriteLine("-----------------------------------");
-        Console.WriteLine("2. Wyjście");
+        Console.WriteLine(settings.CurrentLanguage.Exit);
     }
 }
