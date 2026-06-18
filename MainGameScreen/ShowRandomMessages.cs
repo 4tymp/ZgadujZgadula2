@@ -4,7 +4,7 @@ namespace ZgadujZgadula2.MainGameScreen;
 
 public class ShowRandomMessages{
     public static void Show(int? guess, int target, Settings settings){
-        RandomMessages message = new RandomMessages(); 
+        RandomMessages message = new RandomMessages(settings); 
 
 
         string higherlowermessage;
