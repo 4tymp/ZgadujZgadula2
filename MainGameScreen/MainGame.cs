@@ -22,6 +22,7 @@ public class MainGame{
             newGame.IncrementAttempts();
         }
 
-        // dodawanie do hall of fame
+        GameOver.Show(newGame);
+        GameOver.HandleInput(newGame, difficulty, hallOfFame);
     }
 }
