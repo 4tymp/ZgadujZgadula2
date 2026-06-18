@@ -27,7 +27,7 @@ while (true)
     }
     else if (selection == "3")
     {
-        SettingsScreen.Show(settings);
+        SettingsScreen.Show(settings, hallOfFame);
         selection = "0";
         continue;
     }
