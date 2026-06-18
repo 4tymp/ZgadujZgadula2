@@ -1,7 +1,6 @@
 using ZgadujZgadula2.HallOfFameScreen;
 using ZgadujZgadula2.Shared;
 using ZgadujZgadula2.SettingsScreen;
-using ZgadujZgadula2.SettingsScreen.Languages;
 
 namespace ZgadujZgadula2.MainGameScreen;
 
